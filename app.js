@@ -66,13 +66,13 @@ function head(eyebrow, title, sub) {
 function renderPanel(id) {
   if (id === "prologue") {
     const p = D.prologue;
-    return head(p.eyebrow, p.title, p.sub) + `<div class="timeline">${p.cards.map(spotCard).join("")}</div>`;
+    return head(p.eyebrow, p.title, p.sub) + `<div class="timeline">${p.cards.map(s => spotCard(s)).join("")}</div>`;
   }
   if (id === "themes") {
     return head("Themes", "테마별 스토리", "Roots · Industry · Culture & Nature · Flavors") + `<div class="timeline">${D.themes.map(themeCard).join("")}</div>`;
   }
   const d = D.days.find(x => x.id === id);
-  return head(d.eyebrow, d.title, d.summary) + `<div class="timeline">${d.spots.map(spotCard).join("")}</div>`;
+  return head(d.eyebrow, d.title, d.summary) + `<div class="timeline">${d.spots.map(s => spotCard(s)).join("")}</div>`;
 }
 
 let current = null;

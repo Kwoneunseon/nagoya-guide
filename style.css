@@ -54,7 +54,6 @@ img { max-width: 100%; }
 .map svg { display: block; width: 100%; height: auto; }
 .map .land { fill: var(--chip); stroke: #D6C9AC; stroke-width: 2; }
 .map .route { fill: none; stroke: #C9B48E; stroke-width: 3; stroke-dasharray: 2 7; stroke-linecap: round; }
-.map .sea { fill: none; stroke: #C9DCE0; stroke-width: 10; stroke-linecap: round; }
 .map .region { font-family: var(--sans); font-size: 12px; fill: #A6957A; }
 .pin { cursor: pointer; }
 .pin .dot { fill: var(--wine); stroke: var(--card); stroke-width: 3; }
